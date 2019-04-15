@@ -522,9 +522,13 @@ header img {
 }
 header {
   height: 22rem;
-  padding-top: 10rem;
-  margin-bottom: 2rem;
   width: 100%;
+  margin-bottom: 2rem;
+  padding-top: 10rem;
+  background: url(../images/art-bright-celebration.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   flex-wrap: null;
