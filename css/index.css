@@ -521,7 +521,9 @@ header img {
   border-radius: 15px;
 }
 header {
-  height: 15rem;
+  height: 22rem;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
