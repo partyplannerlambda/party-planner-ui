@@ -138,10 +138,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #363A67;
-  background: url(../images/art-bright-celebration.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000;
   overflow-x: hidden;
   height: 100vh;
   display: flex;
@@ -236,19 +233,21 @@ nav ul {
   flex-wrap: null;
   justify-content: space-around;
   align-items: center;
-  width: 35%;
+  width: 60%;
 }
 nav ul li {
   color: #fff;
   font-size: 1.4rem;
   text-decoration: underline;
   cursor: pointer;
+  text-shadow: -3px 3px 3px #000;
 }
 nav a {
   text-decoration: none;
   list-style-type: none;
   color: #fff;
   font-size: 1.6rem;
+  ext-shadow: -3px 3px 3px #000;
 }
 @media (min-width: 800px) {
   nav a {
@@ -296,7 +295,7 @@ footer p {
   font-size: 1rem;
 }
 main {
-  width: 107%;
+  width: 100%;
   margin: 0 auto;
   transition: all 0.4s;
   margin-bottom: auto;
@@ -526,6 +525,10 @@ header {
   width: 100%;
   margin-bottom: 2rem;
   padding-top: 10rem;
+  background: url(../images/art-bright-celebration.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   flex-wrap: null;
