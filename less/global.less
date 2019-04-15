@@ -4,11 +4,13 @@
 
 html {
   font-size: 62.5%;
-  height: fit-content;
+  height: 101%;
+
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
+
 }
 //#AD378B
 //#FDB5C3
@@ -18,6 +20,9 @@ body {
   background: url('../images/art-bright-celebration.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 100vh;
+  .flexy(flex, column, null, center, center);
   @media @desktop {
 
     max-width: 1200px;
