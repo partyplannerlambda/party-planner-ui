@@ -524,12 +524,17 @@ header {
   height: 22rem;
   width: 100%;
   margin-bottom: 2rem;
-  padding-top: 7rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   flex-wrap: null;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 800px) {
+  header {
+    padding-top: 5rem;
+  }
 }
 .overlay {
   position: fixed;
