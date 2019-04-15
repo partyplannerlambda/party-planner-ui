@@ -233,19 +233,21 @@ nav ul {
   flex-wrap: null;
   justify-content: space-around;
   align-items: center;
-  width: 35%;
+  width: 60%;
 }
 nav ul li {
   color: #fff;
   font-size: 1.4rem;
   text-decoration: underline;
   cursor: pointer;
+  text-shadow: -3px 3px 3px #000;
 }
 nav a {
   text-decoration: none;
   list-style-type: none;
   color: #fff;
   font-size: 1.6rem;
+  ext-shadow: -3px 3px 3px #000;
 }
 @media (min-width: 800px) {
   nav a {
