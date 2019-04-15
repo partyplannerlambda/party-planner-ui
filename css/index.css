@@ -295,12 +295,17 @@ footer {
 }
 main {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 main p {
   font-size: 1.6rem;
   color: #fff;
   text-shadow: -2px 2px 2px #000;
+  width: 75%;
+  margin: 0 auto;
 }
 .about {
   transition: all 0.4s;
