@@ -138,10 +138,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #363A67;
-  background: url(../images/art-bright-celebration.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000;
   overflow-x: hidden;
   height: 100vh;
   display: flex;
