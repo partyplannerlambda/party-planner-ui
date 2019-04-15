@@ -1,13 +1,25 @@
 // Navigation Styles here
 .navigation {
-  .flexy(flex, column, null, space-between, center);
-  height: 7rem;
+  .flexy(flex, row, null, space-around, center);
+  height: 1rem;
   opacity: 0;
   pointer-events: none;
+  transform: translateY(-25px);
+  transition: all .4s;
   @media @desktop {
     height: auto;
     padding: 1rem;
   }
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.slide {
+  transform: translateY(-25px);
 }
 
 nav {
@@ -19,11 +31,12 @@ nav {
   }
   ul {
     .flexy(flex, row, null, space-around, center);
-    width: 50%;
+    width: 35%;
     li {
       color: #fff;
       font-size: 1.4rem;
       text-decoration: underline;
+      cursor: pointer;
     }
   }
 
@@ -36,21 +49,7 @@ nav {
     }
   }
 
-  //sticky nav
-  .sticky {
-  @media @desktop {
-    position: fixed;
-    top: 0;
-    width: 40.5%;
- }
-}
 
-
-
-.chromeperfectpixel-overlay {
-  width: 800px !important;
-  height: auto !important;
-}
 
 
 #nav-icon {
