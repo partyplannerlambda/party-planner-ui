@@ -522,7 +522,7 @@ header img {
 }
 header {
   height: 22rem;
-  padding-top: 7rem;
+  padding-top: 10rem;
   margin-bottom: 2rem;
   width: 100%;
   display: flex;
@@ -530,6 +530,11 @@ header {
   flex-wrap: null;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 800px) {
+  header {
+    padding-top: 5rem;
+  }
 }
 .overlay {
   position: fixed;
