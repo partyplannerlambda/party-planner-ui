@@ -1,0 +1,84 @@
+// Navigation Styles here
+.navigation {
+  .flexy(flex, column, null, space-between, center);
+  height: 7rem;
+  opacity: 0;
+  pointer-events: none;
+  @media @desktop {
+    height: auto;
+    padding: 1rem;
+  }
+}
+
+nav {
+  width: 90%;
+  .flexy(flex, row, null, space-around, center);
+  @media @desktop {
+    width: 53%;
+
+  }
+  ul {
+    .flexy(flex, row, null, space-around, center);
+    width: 50%;
+    li {
+      color: #fff;
+      font-size: 1.4rem;
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    .link-reset(#fff);
+    font-size: 1.6rem;
+    @media @desktop {
+      font-size: 1.4rem;
+    }
+    }
+  }
+
+  //sticky nav
+  .sticky {
+  @media @desktop {
+    position: fixed;
+    top: 0;
+    width: 40.5%;
+ }
+}
+
+
+
+.chromeperfectpixel-overlay {
+  width: 800px !important;
+  height: auto !important;
+}
+
+
+#nav-icon {
+  display: inline-block;
+  cursor: pointer;
+  //transform: translateY(50%) skewY(2deg);
+
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
