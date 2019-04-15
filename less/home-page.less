@@ -1,20 +1,32 @@
+
 main {
-  position: absolute;
-  bottom: 50px;
-  left: 0;
   width: 100%;
   margin: 0 auto;
+  transition: all .4s;
+  @media @desktop {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+  }
  p {
   font-size: 1.6rem;
   color: #fff;
   text-shadow: -2px 2px 2px #000;
   width: 75%;
   margin: 0 auto;
+  background-color: rgba(156, 97, 138, .5);
+  padding: 2rem;
+  border-radius: 10px;
+  &:first-child {
+    margin-bottom: 2rem;
+  }
  }
 }
 
+
+
 .about {
-  transition: all .4s;
+  transition: all .6s;
   width: 100%;
   height: 100%;
   position: absolute;

@@ -131,17 +131,17 @@ table {
 }
 html {
   font-size: 62.5%;
-  height: 100vh;
+  height: fit-content;
 }
 html,
 body {
   font-family: 'Roboto', sans-serif;
 }
 body {
-  padding: 2rem 3%;
   background-color: #363A67;
   background: url('../images/art-bright-celebration.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 @media (min-width: 800px) {
   body {
@@ -258,6 +258,7 @@ nav a {
   width: 35px;
   height: 3px;
   background-color: #fff;
+  box-shadow: -3px 3px 3px #000;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -278,27 +279,25 @@ footer {
   flex-wrap: null;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid gray;
-  background-color: #F4F4F4;
-  width: inherit;
-  height: 7rem;
-  transform: translateY(20px);
+  width: 100%;
+  height: 5rem;
+  background-color: #000;
 }
-@media (min-width: 800px) {
-  footer {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #dbdbdb;
-    height: 5rem;
-    transform: translateY(30px);
-  }
+footer p {
+  color: #fff;
+  font-size: 1rem;
 }
 main {
-  position: absolute;
-  bottom: 50px;
-  left: 0;
   width: 100%;
   margin: 0 auto;
+  transition: all 0.4s;
+}
+@media (min-width: 800px) {
+  main {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+  }
 }
 main p {
   font-size: 1.6rem;
@@ -306,9 +305,15 @@ main p {
   text-shadow: -2px 2px 2px #000;
   width: 75%;
   margin: 0 auto;
+  background-color: rgba(156, 97, 138, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+main p:first-child {
+  margin-bottom: 2rem;
 }
 .about {
-  transition: all 0.4s;
+  transition: all 0.6s;
   width: 100%;
   height: 100%;
   position: absolute;
