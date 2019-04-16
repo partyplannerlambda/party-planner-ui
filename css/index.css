@@ -342,6 +342,7 @@ main p:first-child {
     flex-wrap: null;
     justify-content: center;
     align-items: center;
+    align-items: baseline;
   }
 }
 .about {
