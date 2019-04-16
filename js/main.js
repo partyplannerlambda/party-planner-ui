@@ -4,19 +4,23 @@ const heading = document.querySelector('h1');
 const about = document.querySelector('.about');
 const close = document.querySelector('.close');
 const aboutLink = document.querySelector('#about-link');
+const allContent = document.querySelector('html');
 
 navIcon.addEventListener('click',()=> {
   navIcon.classList.toggle("change");
   nav.classList.toggle('show');
   heading.classList.toggle('slide');
+
 });
 
 aboutLink.addEventListener('click', ()=> {
   about.classList.toggle('slide-in');
+  allContent.style.overflow = 'hidden';
 });
 
 close.addEventListener('click', ()=>{
   about.classList.remove('slide-in');
+  allContent.style.overflow = 'initial';
 });
 
-//
+///
