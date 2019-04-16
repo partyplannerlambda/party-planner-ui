@@ -1,11 +1,14 @@
 
 main {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   transition: all .4s;
-  margin-bottom: auto;
   @media @desktop {
-
+    .flexy(flex, column, null, center, center);
+    width: 90%;
+    max-width: 900px;
+    align-items: baseline;
   }
  p {
   font-size: 1.6rem;
@@ -18,10 +21,21 @@ main {
   border-radius: 10px;
   &:first-child {
     margin-bottom: 2rem;
+    @media @desktop {
+      margin-bottom: 0px;
+    }
+  }
+  @media @desktop {
+    width: 45%;
+
   }
  }
 }
-
+.main-content {
+  @media @desktop {
+    .flexy(flex, row, null, center, center)
+  }
+}
 
 
 .about {
