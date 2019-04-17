@@ -169,8 +169,6 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
 }
 img {
   height: auto;
@@ -415,14 +413,14 @@ main {
 h1,
 h2,
 h3 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #fff;
   text-shadow: -3px 3px 3px #000;
 }
 p,
 a,
 button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 h1 {
   transition: all 0.4s;
