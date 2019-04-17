@@ -460,12 +460,11 @@ h1 {
   }
 }
 header {
-  height: 22rem;
+  height: 30rem;
   width: 100%;
   background: url(../images/art-bright-celebration.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   flex-wrap: null;
@@ -478,4 +477,12 @@ header {
     height: 15rem;
     transform: translateY(70px);
   }
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: null;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(25px);
 }

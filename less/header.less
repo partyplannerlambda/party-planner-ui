@@ -1,10 +1,10 @@
 header {
-  height: 22rem;
+  height: 30rem;
   width: 100%;
   background: url(../images/art-bright-celebration.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  //background-position: center;
   .flexy(flex, column, null, center, center);
   @media @desktop {
   //  display: none;
@@ -12,5 +12,9 @@ header {
   height: 15rem;
   transform: translateY(70px);
   }
+}
 
+.header-container {
+  .flexy(flex, column, null, center, center);
+  transform: translateY(25px);
 }
