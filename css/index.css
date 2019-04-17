@@ -403,6 +403,11 @@ main {
   height: 100vh;
   overflow-y: scroll;
 }
+@media (min-width: 900px) {
+  .slide-in {
+    justify-content: center;
+  }
+}
 .person {
   display: flex;
   flex-direction: row;
