@@ -41,14 +41,17 @@ main {
     max-width: 1200px;
     margin: 0 auto;
   }
-  button {
+  .button {
     border: none;
     padding: 2rem;
     font-size: 2.5vmin;
     margin: 0 auto;
     border-radius: 50px;
     width: 45%;
-
+    max-width: 360px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
 
   }
 }
@@ -78,13 +81,19 @@ main {
     h1 {
       text-align: center;
       margin: 1rem;
+      @media @desktop {
+        font-size: 5vmin;
+      }
     }
     width: 75%;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #fff;
     text-shadow: -2px 2px 2px #000;
+    @media @desktop {
+      font-size: 2.5vmin;
+    }
    }
   }
 
@@ -93,6 +102,8 @@ main {
 .slide-in {
   transform: translateX(0px);
   .flexy(flex, column, null, center, center);
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .person {

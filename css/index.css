@@ -338,13 +338,17 @@ main {
     margin: 0 auto;
   }
 }
-.desktop-buttons button {
+.desktop-buttons .button {
   border: none;
   padding: 2rem;
   font-size: 2.5vmin;
   margin: 0 auto;
   border-radius: 50px;
   width: 45%;
+  max-width: 360px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
 }
 .about {
   display: none;
@@ -376,10 +380,20 @@ main {
   text-align: center;
   margin: 1rem;
 }
+@media (min-width: 900px) {
+  .about .content h1 {
+    font-size: 5vmin;
+  }
+}
 .about p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #fff;
   text-shadow: -2px 2px 2px #000;
+}
+@media (min-width: 900px) {
+  .about p {
+    font-size: 2.5vmin;
+  }
 }
 .slide-in {
   transform: translateX(0px);
@@ -388,6 +402,8 @@ main {
   flex-wrap: null;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .person {
   display: flex;
@@ -411,11 +427,11 @@ button {
 h1 {
   transition: all 0.4s;
   pointer-events: none;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 @media (min-width: 900px) {
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 .about img {
@@ -423,6 +439,13 @@ h1 {
   width: 75px;
   border-radius: 50%;
   border: 2px solid #54354A;
+  margin: 1rem;
+}
+@media (min-width: 900px) {
+  .about img {
+    height: 10vmin;
+    width: 10vmin;
+  }
 }
 @media (min-width: 900px) {
   .main-image {

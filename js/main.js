@@ -5,7 +5,7 @@ const about = document.querySelector('.about');
 const close = document.querySelector('.close');
 const aboutLink = document.querySelector('#about-link');
 const allContent = document.querySelector('html');
-const button = document.querySelectorAll('button');
+const button = document.querySelectorAll('.button');
 
 navIcon.addEventListener('click',()=> {
   navIcon.classList.toggle("change");
