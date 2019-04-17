@@ -354,12 +354,11 @@ main {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
   border: 5px solid #734977;
   border-radius: 5px;
-  opacity: 0.9;
   transform: translateX(2000px);
 }
 .about .close {
