@@ -412,7 +412,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: null;
-  justify-content: center;
+  justify-content: null;
   align-items: center;
 }
 h1,
