@@ -398,10 +398,15 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: null;
-  justify-content: center;
+  justify-content: null;
   align-items: center;
   height: 100vh;
   overflow-y: scroll;
+}
+@media (min-width: 900px) {
+  .slide-in {
+    justify-content: center;
+  }
 }
 .person {
   display: flex;

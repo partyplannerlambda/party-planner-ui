@@ -99,9 +99,12 @@ main {
 
 .slide-in {
   transform: translateX(0px);
-  .flexy(flex, column, null, center, center);
+  .flexy(flex, column, null, null, center);
   height: 100vh;
   overflow-y: scroll;
+  @media @desktop {
+    justify-content: center;
+  }
 }
 
 .person {
