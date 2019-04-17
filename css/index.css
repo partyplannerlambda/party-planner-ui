@@ -412,7 +412,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: null;
-  justify-content: center;
+  justify-content: null;
   align-items: center;
 }
 h1,
@@ -465,6 +465,7 @@ header {
   background: url(../images/art-bright-celebration.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   flex-wrap: null;
@@ -485,4 +486,9 @@ header {
   justify-content: center;
   align-items: center;
   transform: translateY(25px);
+}
+@media (min-width: 900px) {
+  .header-container {
+    transform: translateY(0px);
+  }
 }
