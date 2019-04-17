@@ -487,3 +487,8 @@ header {
   align-items: center;
   transform: translateY(25px);
 }
+@media (min-width: 900px) {
+  .header-container {
+    transform: translateY(0px);
+  }
+}
