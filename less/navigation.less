@@ -1,45 +1,40 @@
-// Navigation Styles here
-.navigation {
-  .flexy(flex, row, null, space-around, center);
-  height: 1rem;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-25px);
-  transition: all .4s;
+//Navigation Styles here
+nav {
+  display: block;
   @media @desktop {
-    height: auto;
-    padding: 1rem;
+    display: none;
   }
 }
 
+.navigation {
+  transform: translateY(-25px);
+  transition: all .3s;
+  opacity: 0;
+  cursor: pointer;
+  .flexy(flex, row, null, space-around, center);
+  width: 245px;
+  //pointer-events: none;
+  li,li a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-shadow: -3px 3px 3px #000;
+
+  }
+}
+
+
 .show {
-  pointer-events: auto;
+  pointer-events: all;
   opacity: 1;
   transform: translateY(-15px);
 }
 
 .slide {
   transform: translateY(-25px);
+
 }
 
-nav {
-  width: 90%;
-  .flexy(flex, row, null, space-around, center);
-  @media @desktop {
-    width: 53%;
 
-  }
-  ul {
-    .flexy(flex, row, null, space-around, center);
-    width: 243px;
-    li {
-      color: #fff;
-      font-size: 1.4rem;
-      text-decoration: underline;
-      cursor: pointer;
-      text-shadow: -3px 3px 3px #000;
-    }
-  }
 
   a {
     .link-reset(#fff);
@@ -49,7 +44,7 @@ nav {
       font-size: 1.4rem;
     }
     }
-  }
+
 
 
 
@@ -69,6 +64,9 @@ nav {
     box-shadow: -3px 3px 3px #000;
     margin: 6px 0;
     transition: 0.4s;
+    @media @desktop {
+      display: none;
+    }
 }
 
 .change .bar1 {

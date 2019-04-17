@@ -5,6 +5,7 @@ const about = document.querySelector('.about');
 const close = document.querySelector('.close');
 const aboutLink = document.querySelector('#about-link');
 const allContent = document.querySelector('html');
+const button = document.querySelectorAll('button');
 
 navIcon.addEventListener('click',()=> {
   navIcon.classList.toggle("change");
@@ -14,13 +15,29 @@ navIcon.addEventListener('click',()=> {
 });
 
 aboutLink.addEventListener('click', ()=> {
-  about.classList.toggle('slide-in');
-  allContent.style.overflow = 'hidden';
+  about.style.display = 'flex';
+  setTimeout(function(){
+    about.classList.toggle('slide-in');
+    allContent.style.overflow = 'hidden';
+  },1);
+
 });
 
 close.addEventListener('click', ()=>{
   about.classList.remove('slide-in');
   allContent.style.overflow = 'initial';
+  setTimeout(function(){
+    about.style.display = 'none';
+  },500);
+});
+
+button[1].addEventListener('click', ()=> {
+  about.style.display = 'flex';
+  setTimeout(function(){
+    about.classList.toggle('slide-in');
+    allContent.style.overflow = 'hidden';
+  },1);
+
 });
 
 ///

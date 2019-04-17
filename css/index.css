@@ -149,7 +149,6 @@ body {
 }
 @media (min-width: 900px) {
   body {
-    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -159,9 +158,6 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
-}
-h1 {
-  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -188,61 +184,41 @@ img {
   max-width: 700px;
   margin: 0 auto;
 }
+nav {
+  display: block;
+}
+@media (min-width: 900px) {
+  nav {
+    display: none;
+  }
+}
 .navigation {
+  transform: translateY(-25px);
+  transition: all 0.3s;
+  opacity: 0;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: null;
   justify-content: space-around;
   align-items: center;
-  height: 1rem;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-25px);
-  transition: all 0.4s;
+  width: 245px;
 }
-@media (min-width: 900px) {
-  .navigation {
-    height: auto;
-    padding: 1rem;
-  }
+.navigation li,
+.navigation li a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: -3px 3px 3px #000;
 }
 .show {
-  pointer-events: auto;
+  pointer-events: all;
   opacity: 1;
   transform: translateY(-15px);
 }
 .slide {
   transform: translateY(-25px);
 }
-nav {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: null;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (min-width: 900px) {
-  nav {
-    width: 53%;
-  }
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: null;
-  justify-content: space-around;
-  align-items: center;
-  width: 243px;
-}
-nav ul li {
-  color: #fff;
-  font-size: 1.4rem;
-  text-decoration: underline;
-  cursor: pointer;
-  text-shadow: -3px 3px 3px #000;
-}
-nav a {
+a {
   text-decoration: none;
   list-style-type: none;
   color: #fff;
@@ -250,7 +226,7 @@ nav a {
   ext-shadow: -3px 3px 3px #000;
 }
 @media (min-width: 900px) {
-  nav a {
+  a {
     font-size: 1.4rem;
   }
 }
@@ -267,6 +243,13 @@ nav a {
   box-shadow: -3px 3px 3px #000;
   margin: 6px 0;
   transition: 0.4s;
+}
+@media (min-width: 900px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: none;
+  }
 }
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -299,6 +282,11 @@ main {
   height: 100%;
   margin: 0 auto;
   transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: null;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 900px) {
   main {
@@ -322,7 +310,7 @@ main {
   }
 }
 .main-content p {
-  font-size: 1.6rem;
+  font-size: 2.5vmin;
   color: #fff;
   text-shadow: -2px 2px 2px #000;
   width: 75%;
@@ -332,11 +320,11 @@ main {
 }
 @media (min-width: 900px) {
   .main-content p {
-    width: 100%;
+    width: 90%;
   }
 }
 .desktop-buttons {
-  dispay: none;
+  display: none;
 }
 @media (min-width: 900px) {
   .desktop-buttons {
@@ -345,18 +333,21 @@ main {
     flex-wrap: null;
     justify-content: space-around;
     align-items: center;
-    width: 75%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
 .desktop-buttons button {
   border: none;
   padding: 2rem;
+  font-size: 2.5vmin;
   margin: 0 auto;
   border-radius: 50px;
   width: 45%;
 }
 .about {
+  display: none;
   transition: all 0.6s;
   width: 100%;
   height: 100%;
@@ -367,11 +358,6 @@ main {
   border: 5px solid #734977;
   border-radius: 5px;
   opacity: 0.9;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: null;
-  justify-content: center;
-  align-items: center;
   transform: translateX(2000px);
 }
 .about .close {
@@ -397,6 +383,11 @@ main {
 }
 .slide-in {
   transform: translateX(0px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: null;
+  justify-content: center;
+  align-items: center;
 }
 .person {
   display: flex;
@@ -419,14 +410,12 @@ button {
 }
 h1 {
   transition: all 0.4s;
-}
-.navigation h1 {
   pointer-events: none;
   font-size: 4rem;
 }
 @media (min-width: 900px) {
-  .navigation h1 {
-    font-size: 3.3rem;
+  h1 {
+    font-size: 6rem;
   }
 }
 .about img {
@@ -446,8 +435,6 @@ h1 {
 header {
   height: 22rem;
   width: 100%;
-  margin-bottom: 2rem;
-  padding-top: 10rem;
   background: url(../images/art-bright-celebration.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -460,6 +447,8 @@ header {
 }
 @media (min-width: 900px) {
   header {
-    display: none;
+    background: #000;
+    height: 15rem;
+    transform: translateY(70px);
   }
 }
