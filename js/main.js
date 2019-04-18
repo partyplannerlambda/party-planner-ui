@@ -14,14 +14,21 @@ navIcon.addEventListener('click',()=> {
 
 });
 
-aboutLink.addEventListener('click', ()=> {
-  about.style.display = 'flex';
-  setTimeout(function(){
-    about.classList.toggle('slide-in');
-    allContent.style.overflow = 'hidden';
-  },1);
+class PageLink {
+  constructor(link) {
+    this.link = link;
+    console.log(this.link);
+     this.link.addEventListener('click', this.slideIn.bind(this));
 
-});
+  }
+  slideIn() {
+    about.style.display = 'flex';
+    setTimeout(()=>{
+      about.classList.toggle('slide-in');
+      allContent.style.overflow = 'hidden';
+    },1);
+  }
+}
 
 close.addEventListener('click', ()=>{
   about.classList.remove('slide-in');
@@ -31,13 +38,7 @@ close.addEventListener('click', ()=>{
   },500);
 });
 
-button[1].addEventListener('click', ()=> {
-  about.style.display = 'flex';
-  setTimeout(function(){
-    about.classList.toggle('slide-in');
-    allContent.style.overflow = 'hidden';
-  },1);
 
-});
 
-///
+
+let links = document.querySelectorAll('.about-link').forEach(link => new PageLink(link));
