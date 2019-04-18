@@ -5,7 +5,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  .flexy(flex, column, null, center, center);
+  .flexy(flex, column, nowrap, center, center);
   @media @desktop {
   //  display: none;
   background: #000;
@@ -15,7 +15,7 @@ header {
 }
 
 .header-container {
-  .flexy(flex, column, null, center, center);
+  .flexy(flex, column, nowrap, center, center);
   transform: translateY(25px);
   @media @desktop {
     transform: translateY(0px);
