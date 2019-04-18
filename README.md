@@ -3,6 +3,7 @@
 ## What did we build?
 A Party Planner App
 
+
 ## What does it do?
 Allows users to 'plan' for parties by having users create an account, where they can add guests, list items needed, designate a shopping list, etc.
 
