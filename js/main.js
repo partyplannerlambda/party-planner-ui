@@ -19,7 +19,6 @@ navIcon.addEventListener('click',()=> {
 class PageLink {
   constructor(link) {
     this.link = link;
-    //console.log(this.link);
      this.link.addEventListener('click', this.slideIn.bind(this));
 
   }
