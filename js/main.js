@@ -5,8 +5,9 @@ const about = document.querySelector('.about');
 const close = document.querySelector('.close');
 const aboutLink = document.querySelector('#about-link');
 const allContent = document.querySelector('html');
-const button = document.querySelectorAll('.button');
 
+
+//nav Icon event listener
 navIcon.addEventListener('click',()=> {
   navIcon.classList.toggle("change");
   nav.classList.toggle('show');
@@ -14,6 +15,7 @@ navIcon.addEventListener('click',()=> {
 
 });
 
+//Link to About page for mobile and desktop links
 class PageLink {
   constructor(link) {
     this.link = link;
@@ -23,7 +25,7 @@ class PageLink {
   }
   slideIn() {
     about.style.display = 'flex';
-    setTimeout(()=>{
+    setTimeout(()=>{//timeout used so that animation will work
       about.classList.toggle('slide-in');
       allContent.style.overflow = 'hidden';
     },1);
@@ -33,7 +35,7 @@ class PageLink {
 close.addEventListener('click', ()=>{
   about.classList.remove('slide-in');
   allContent.style.overflow = 'initial';
-  setTimeout(function(){
+  setTimeout(function(){//display set to none after a timeout so animation will work
     about.style.display = 'none';
   },500);
 });
