@@ -15,6 +15,7 @@ navIcon.addEventListener('click',()=> {
 
 });
 
+
 //Link to About page for mobile and desktop links
 class PageLink {
   constructor(link) {
